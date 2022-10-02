@@ -3,6 +3,8 @@ import { SET_APP_THEME } from '../actionTypes/appActionType';
 const initialState = {
   appTheme: 'light',
 };
+
+// eslint-disable-next-line
 export default function appReducer(state = initialState, action) {
   const { data, type } = action;
   switch (type) {

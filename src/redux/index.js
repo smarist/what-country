@@ -1,8 +1,19 @@
 import { applyMiddleware, createStore } from 'redux';
+import { persistStore } from 'redux-persist';
+// import storage from 'redux-persist/lib/storage';
 import thunk from 'redux-thunk';
-import reduxReducer from './reducers/appReducer';
+import reduxReducer from './reducers/combineReducer';
 
 const initState = {};
+// const persistConfig = {
+//   key: 'root',
+//   storage,
+//   whitelist: ['app'], // only navigation will be persisted
+// };
+
+// const persistedReducer = persistReducer(persistConfig, reduxReducer);
 const store = createStore(reduxReducer, initState, applyMiddleware(thunk));
 
-export default store;
+const persistor = persistStore(store);
+
+export { store, persistor };
