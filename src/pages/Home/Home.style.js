@@ -3,7 +3,7 @@ import { makeStyles } from '@material-ui/core';
 const useStyles = makeStyles((theme) => ({
   homeBox: {
     backgroundColor: theme.palette.bgColor.main,
-    height: '100vh',
+    height: '100%',
     color: theme.palette.textColor.main,
   },
   mainBox: {
