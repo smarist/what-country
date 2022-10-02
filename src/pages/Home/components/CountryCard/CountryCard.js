@@ -12,15 +12,15 @@ function CountryCard() {
       <Box className={classes.cardDetails}>
         <Typography className={classes.countryName}>Name</Typography>
         <Box className={classes.textBox}>
-          <Typography className={classes.cardTitle}>Population :</Typography>
+          <Typography className={classes.cardTitle}>Population:</Typography>
           <Typography className={classes.cardText}>population</Typography>
         </Box>
         <Box className={classes.textBox}>
-          <Typography className={classes.cardTitle}>Region :</Typography>
+          <Typography className={classes.cardTitle}>Region:</Typography>
           <Typography className={classes.cardText}>region</Typography>
         </Box>
         <Box className={classes.textBox}>
-          <Typography className={classes.cardTitle}>Capital :</Typography>
+          <Typography className={classes.cardTitle}>Capital:</Typography>
           <Typography className={classes.cardText}>capital</Typography>
         </Box>
       </Box>

@@ -11,6 +11,10 @@ const useStyles = makeStyles((theme) => ({
     boxShadow: ' 0px 2px 10px -5px rgba(21,6,5,1)',
     color: theme.palette.textColor.main,
   },
+  headerH1: {
+    fontSize: '1.2em',
+    fontWeight: '600',
+  },
   switchBox: {
     display: 'flex',
     gap: '10px',

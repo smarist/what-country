@@ -17,7 +17,7 @@ export const darkTheme = createTheme({
     bgColor: { main: '#212E37' },
     bgColor2: { main: '#2B3743' },
     textColor: { main: '#FFF' },
-    textColor2: { main: '#707070' },
+    textColor2: { main: '#E8F1FF' },
     textColor3: { main: '#E8F1FF' },
     borderColor: { main: '#000' },
     boxShadow: { main: '0 3px 10px rgb(0 0 0 / 0.2)' },

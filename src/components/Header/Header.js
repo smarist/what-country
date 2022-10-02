@@ -38,7 +38,7 @@ export default function Header({
     <Box
       className={classes.headerBox}
     >
-      <Typography>Where in the world?</Typography>
+      <Typography className={classes.headerH1}>Where in the world?</Typography>
       <Box className={classes.switchBox} onClick={() => onToggleTheme()}>
         <Box className={classes.switchIcon}>
           {modeIcon}

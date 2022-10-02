@@ -9,7 +9,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: theme.palette.bgColor2.main,
   },
   flagImage: {
-    height: '158px',
+    height: '145px',
     backgroundColor: 'blue',
     borderRadius: '3px 3px 0 0',
   },
@@ -26,12 +26,13 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: '15px',
   },
   cardTitle: {
-    fontSize: '14px !important',
+    fontSize: '15px !important',
     fontWeight: '600',
+    color: theme.palette.textColor2.main,
   },
   cardText: {
-    fontSize: '14px !important',
-    marginLeft: '3px',
+    fontSize: '15px !important',
+    marginLeft: '4px !important',
     color: theme.palette.textColor3.main,
   },
 }));

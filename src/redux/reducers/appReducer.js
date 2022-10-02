@@ -11,7 +11,7 @@ export default function appReducer(state = initialState, action) {
     case SET_APP_THEME:
       return {
         ...state,
-        appTheme: data,
+        appTheme: data || (state.appTheme === 'dark' ? 'light' : 'dark'),
       };
     default:
       return state;
