@@ -1,8 +1,8 @@
 import React, { useMemo } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import setAppTheme from '../../../redux/actions/appAction';
-import { ReactComponent as Sun } from '../../../resources/light mode-icon.svg';
-import { ReactComponent as Moon } from '../../../resources/dark mode-icon.svg';
+import { setAppTheme } from '../../../redux/actions/appAction';
+import { ReactComponent as Sun } from '../../../Resources/light mode-icon.svg';
+import { ReactComponent as Moon } from '../../../Resources/dark mode-icon.svg';
 import useStyles from '../Header.style';
 
 function useHeader() {
@@ -11,7 +11,6 @@ function useHeader() {
   const dispatch = useDispatch();
   const onToggleTheme = () => {
     setAppTheme()(dispatch);
-    console.log('hey you');
   };
   const modeIcon = useMemo(() => {
     if (appTheme === 'light') {
@@ -24,7 +23,6 @@ function useHeader() {
       return 'LightMode';
     } return 'DarkMode';
   }, [appTheme]);
-  console.log(appTheme);
   return {
     onToggleTheme,
     modeIcon,

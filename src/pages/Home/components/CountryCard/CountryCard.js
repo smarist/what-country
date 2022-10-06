@@ -2,26 +2,32 @@ import { Box, Typography } from '@material-ui/core';
 import React from 'react';
 import useStyles from './CountryCard.style';
 
-function CountryCard() {
+function CountryCard({
+  population,
+  region,
+  capital,
+  flag,
+  name,
+}) {
   const classes = useStyles();
   return (
     <Box className={classes.cardBox}>
       <Box className={classes.flagImage}>
-        flagImg
+        <img src={flag} alt="flag" className={classes.flag} />
       </Box>
       <Box className={classes.cardDetails}>
-        <Typography className={classes.countryName}>Name</Typography>
+        <Typography className={classes.countryName}>{name}</Typography>
         <Box className={classes.textBox}>
           <Typography className={classes.cardTitle}>Population:</Typography>
-          <Typography className={classes.cardText}>population</Typography>
+          <Typography className={classes.cardText}>{population}</Typography>
         </Box>
         <Box className={classes.textBox}>
           <Typography className={classes.cardTitle}>Region:</Typography>
-          <Typography className={classes.cardText}>region</Typography>
+          <Typography className={classes.cardText}>{region}</Typography>
         </Box>
         <Box className={classes.textBox}>
           <Typography className={classes.cardTitle}>Capital:</Typography>
-          <Typography className={classes.cardText}>capital</Typography>
+          <Typography className={classes.cardText}>{capital}</Typography>
         </Box>
       </Box>
     </Box>

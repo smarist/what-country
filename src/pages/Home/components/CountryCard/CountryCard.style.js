@@ -9,9 +9,14 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: theme.palette.bgColor2.main,
   },
   flagImage: {
-    height: '145px',
-    backgroundColor: 'blue',
+    height: '150px',
+    width: '100%',
     borderRadius: '3px 3px 0 0',
+  },
+  flag: {
+    width: '100%',
+    height: '100%',
+    objectFit: 'cover',
   },
   cardDetails: {
     padding: '25px',

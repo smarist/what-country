@@ -1,7 +1,13 @@
-import { SET_APP_THEME } from '../actionTypes/appActionType';
+import { SET_APP_THEME, IS_LOADING } from '../actionTypes/appActionType';
 
-export default function setAppTheme(data) {
+export function setAppTheme(data) {
   return (dispatch) => {
     dispatch({ type: SET_APP_THEME, data });
+  };
+}
+
+export function setIsLoading(data) {
+  return (dispatch) => {
+    dispatch({ type: IS_LOADING, data });
   };
 }

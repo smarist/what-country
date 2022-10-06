@@ -2,15 +2,15 @@ import { makeStyles } from '@material-ui/core';
 
 const useStyles = makeStyles(() => ({
   skeletonBox: {
-    display: 'grid',
-    gridGap: '70px',
-    gridTemplateColumns: 'repeat(auto-fill, minmax(230px, 1fr))',
-    gridAutoRows: '320px',
+    display: 'grid !important',
+    gridGap: '70px !important',
+    gridTemplateColumns: 'repeat(auto-fill, minmax(210px, 1fr)) !important',
+    gridAutoRows: '320px !important',
   },
   skeleton: {
-    height: '430px',
-    borderRadius: '3px',
-    // maxWidth: '230px',
+    height: '480px !important',
+    borderRadius: '4px',
+    minWidth: '210px !important',
   },
 }));
 
