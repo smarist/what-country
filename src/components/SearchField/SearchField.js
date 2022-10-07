@@ -1,9 +1,9 @@
 import { InputBase } from '@material-ui/core';
 import SearchIcon from '@material-ui/icons/Search';
 import React from 'react';
-import useStyles from './UcSearchField.style';
+import useStyles from './SearchField.style';
 
-function UcSearchField() {
+function SearchField({ value, onChange }) {
   const classes = useStyles();
   return (
     <div className={classes.search}>
@@ -12,6 +12,8 @@ function UcSearchField() {
       </div>
       <InputBase
         placeholder="Search…"
+        value={value}
+        onChange={onChange}
         classes={{
           root: classes.inputRoot,
           input: classes.inputInput,
@@ -22,4 +24,4 @@ function UcSearchField() {
   );
 }
 
-export default UcSearchField;
+export default SearchField;

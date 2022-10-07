@@ -34,6 +34,19 @@ const useStyles = makeStyles((theme) => ({
     gridAutoRows: '320px !important',
     marginTop: '60px !important',
   },
+  dropDown: {
+    backgroundColor: `${theme.palette.bgColor2.main} !important`,
+    color: theme.palette.textColor.main,
+    height: '40px !important',
+    fontSize: '13px !important',
+    borderRadius: '2px !important',
+    '& fieldset': {
+      border: `1px solid ${theme.palette.borderColor.main} !important`,
+    },
+    '& label': {
+      display: 'none',
+    },
+  },
 }));
 
 export default useStyles;

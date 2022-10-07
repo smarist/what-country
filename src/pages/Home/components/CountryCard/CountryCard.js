@@ -1,5 +1,6 @@
 import { Box, Typography } from '@material-ui/core';
 import React from 'react';
+import { Link } from 'react-router-dom';
 import useStyles from './CountryCard.style';
 
 function CountryCard({
@@ -13,7 +14,9 @@ function CountryCard({
   return (
     <Box className={classes.cardBox}>
       <Box className={classes.flagImage}>
-        <img src={flag} alt="flag" className={classes.flag} />
+        <Link to={`/${name}`} key={name}>
+          <img src={flag} alt="flag" className={classes.flag} />
+        </Link>
       </Box>
       <Box className={classes.cardDetails}>
         <Typography className={classes.countryName}>{name}</Typography>
