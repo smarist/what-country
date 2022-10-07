@@ -6,7 +6,7 @@ import useStyles from './CardSkeleton.style';
 function CardSkeleton() {
   const classes = useStyles();
   return (
-    <Grid container data-testid="payment-page-skeleton" className={classes.skeletonBox}>
+    <Grid container data-testid="card-skeleton" className={classes.skeletonBox}>
       {new Array(50).fill('').map((item, index) => (
         <Skeleton
           key={`skeleton-${index}`}

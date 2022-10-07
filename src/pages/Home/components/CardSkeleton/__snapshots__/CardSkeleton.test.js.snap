@@ -1,0 +1,159 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card Skeleton Test should render successfully 1`] = `
+<div
+  class="MuiGrid-root makeStyles-skeletonBox-1 MuiGrid-container"
+  data-testid="card-skeleton"
+>
+  <span
+    class="MuiSkeleton-root MuiSkeleton-text makeStyles-skeleton-2 MuiSkeleton-wave"
+  />
+  <span
+    class="MuiSkeleton-root MuiSkeleton-text makeStyles-skeleton-2 MuiSkeleton-wave"
+  />
+  <span
+    class="MuiSkeleton-root MuiSkeleton-text makeStyles-skeleton-2 MuiSkeleton-wave"
+  />
+  <span
+    class="MuiSkeleton-root MuiSkeleton-text makeStyles-skeleton-2 MuiSkeleton-wave"
+  />
+  <span
+    class="MuiSkeleton-root MuiSkeleton-text makeStyles-skeleton-2 MuiSkeleton-wave"
+  />
+  <span
+    class="MuiSkeleton-root MuiSkeleton-text makeStyles-skeleton-2 MuiSkeleton-wave"
+  />
+  <span
+    class="MuiSkeleton-root MuiSkeleton-text makeStyles-skeleton-2 MuiSkeleton-wave"
+  />
+  <span
+    class="MuiSkeleton-root MuiSkeleton-text makeStyles-skeleton-2 MuiSkeleton-wave"
+  />
+  <span
+    class="MuiSkeleton-root MuiSkeleton-text makeStyles-skeleton-2 MuiSkeleton-wave"
+  />
+  <span
+    class="MuiSkeleton-root MuiSkeleton-text makeStyles-skeleton-2 MuiSkeleton-wave"
+  />
+  <span
+    class="MuiSkeleton-root MuiSkeleton-text makeStyles-skeleton-2 MuiSkeleton-wave"
+  />
+  <span
+    class="MuiSkeleton-root MuiSkeleton-text makeStyles-skeleton-2 MuiSkeleton-wave"
+  />
+  <span
+    class="MuiSkeleton-root MuiSkeleton-text makeStyles-skeleton-2 MuiSkeleton-wave"
+  />
+  <span
+    class="MuiSkeleton-root MuiSkeleton-text makeStyles-skeleton-2 MuiSkeleton-wave"
+  />
+  <span
+    class="MuiSkeleton-root MuiSkeleton-text makeStyles-skeleton-2 MuiSkeleton-wave"
+  />
+  <span
+    class="MuiSkeleton-root MuiSkeleton-text makeStyles-skeleton-2 MuiSkeleton-wave"
+  />
+  <span
+    class="MuiSkeleton-root MuiSkeleton-text makeStyles-skeleton-2 MuiSkeleton-wave"
+  />
+  <span
+    class="MuiSkeleton-root MuiSkeleton-text makeStyles-skeleton-2 MuiSkeleton-wave"
+  />
+  <span
+    class="MuiSkeleton-root MuiSkeleton-text makeStyles-skeleton-2 MuiSkeleton-wave"
+  />
+  <span
+    class="MuiSkeleton-root MuiSkeleton-text makeStyles-skeleton-2 MuiSkeleton-wave"
+  />
+  <span
+    class="MuiSkeleton-root MuiSkeleton-text makeStyles-skeleton-2 MuiSkeleton-wave"
+  />
+  <span
+    class="MuiSkeleton-root MuiSkeleton-text makeStyles-skeleton-2 MuiSkeleton-wave"
+  />
+  <span
+    class="MuiSkeleton-root MuiSkeleton-text makeStyles-skeleton-2 MuiSkeleton-wave"
+  />
+  <span
+    class="MuiSkeleton-root MuiSkeleton-text makeStyles-skeleton-2 MuiSkeleton-wave"
+  />
+  <span
+    class="MuiSkeleton-root MuiSkeleton-text makeStyles-skeleton-2 MuiSkeleton-wave"
+  />
+  <span
+    class="MuiSkeleton-root MuiSkeleton-text makeStyles-skeleton-2 MuiSkeleton-wave"
+  />
+  <span
+    class="MuiSkeleton-root MuiSkeleton-text makeStyles-skeleton-2 MuiSkeleton-wave"
+  />
+  <span
+    class="MuiSkeleton-root MuiSkeleton-text makeStyles-skeleton-2 MuiSkeleton-wave"
+  />
+  <span
+    class="MuiSkeleton-root MuiSkeleton-text makeStyles-skeleton-2 MuiSkeleton-wave"
+  />
+  <span
+    class="MuiSkeleton-root MuiSkeleton-text makeStyles-skeleton-2 MuiSkeleton-wave"
+  />
+  <span
+    class="MuiSkeleton-root MuiSkeleton-text makeStyles-skeleton-2 MuiSkeleton-wave"
+  />
+  <span
+    class="MuiSkeleton-root MuiSkeleton-text makeStyles-skeleton-2 MuiSkeleton-wave"
+  />
+  <span
+    class="MuiSkeleton-root MuiSkeleton-text makeStyles-skeleton-2 MuiSkeleton-wave"
+  />
+  <span
+    class="MuiSkeleton-root MuiSkeleton-text makeStyles-skeleton-2 MuiSkeleton-wave"
+  />
+  <span
+    class="MuiSkeleton-root MuiSkeleton-text makeStyles-skeleton-2 MuiSkeleton-wave"
+  />
+  <span
+    class="MuiSkeleton-root MuiSkeleton-text makeStyles-skeleton-2 MuiSkeleton-wave"
+  />
+  <span
+    class="MuiSkeleton-root MuiSkeleton-text makeStyles-skeleton-2 MuiSkeleton-wave"
+  />
+  <span
+    class="MuiSkeleton-root MuiSkeleton-text makeStyles-skeleton-2 MuiSkeleton-wave"
+  />
+  <span
+    class="MuiSkeleton-root MuiSkeleton-text makeStyles-skeleton-2 MuiSkeleton-wave"
+  />
+  <span
+    class="MuiSkeleton-root MuiSkeleton-text makeStyles-skeleton-2 MuiSkeleton-wave"
+  />
+  <span
+    class="MuiSkeleton-root MuiSkeleton-text makeStyles-skeleton-2 MuiSkeleton-wave"
+  />
+  <span
+    class="MuiSkeleton-root MuiSkeleton-text makeStyles-skeleton-2 MuiSkeleton-wave"
+  />
+  <span
+    class="MuiSkeleton-root MuiSkeleton-text makeStyles-skeleton-2 MuiSkeleton-wave"
+  />
+  <span
+    class="MuiSkeleton-root MuiSkeleton-text makeStyles-skeleton-2 MuiSkeleton-wave"
+  />
+  <span
+    class="MuiSkeleton-root MuiSkeleton-text makeStyles-skeleton-2 MuiSkeleton-wave"
+  />
+  <span
+    class="MuiSkeleton-root MuiSkeleton-text makeStyles-skeleton-2 MuiSkeleton-wave"
+  />
+  <span
+    class="MuiSkeleton-root MuiSkeleton-text makeStyles-skeleton-2 MuiSkeleton-wave"
+  />
+  <span
+    class="MuiSkeleton-root MuiSkeleton-text makeStyles-skeleton-2 MuiSkeleton-wave"
+  />
+  <span
+    class="MuiSkeleton-root MuiSkeleton-text makeStyles-skeleton-2 MuiSkeleton-wave"
+  />
+  <span
+    class="MuiSkeleton-root MuiSkeleton-text makeStyles-skeleton-2 MuiSkeleton-wave"
+  />
+</div>
+`;
