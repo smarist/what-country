@@ -19,24 +19,24 @@ const useStyles = makeStyles((theme) => ({
     objectFit: 'cover',
   },
   cardDetails: {
-    padding: '25px',
+    padding: '20px',
   },
   textBox: {
     display: 'flex',
     marginTop: '5px',
   },
   countryName: {
-    fontSize: '18px !important',
+    fontSize: '16px !important',
     fontWeight: '600',
     marginBottom: '15px',
   },
   cardTitle: {
-    fontSize: '15px !important',
+    fontSize: '14px !important',
     fontWeight: '600',
     color: theme.palette.textColor2.main,
   },
   cardText: {
-    fontSize: '15px !important',
+    fontSize: '14px !important',
     marginLeft: '4px !important',
     color: theme.palette.textColor3.main,
   },

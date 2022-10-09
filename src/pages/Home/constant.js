@@ -1,9 +1,10 @@
 export const regionOptions = [
-  { value: 'africa', id: 'africa', name: 'africa' },
-  { value: 'americas', id: 'americas', name: 'americas' },
-  { value: 'antarctic', id: 'antarctic', name: 'antarctic' },
-  { value: 'asia', id: 'asia', name: 'asia' },
-  { value: 'europe', id: 'europe', name: 'europe' },
+  { value: 'africa', id: 'africa', name: 'Africa' },
+  { value: 'americas', id: 'americas', name: 'Americas' },
+  { value: 'antarctic', id: 'antarctic', name: 'Antarctic' },
+  { value: 'asia', id: 'asia', name: 'Asia' },
+  { value: 'europe', id: 'europe', name: 'Europe' },
+  { value: 'all', id: 'all', name: 'All' },
 ];
 
 export const orderTableColumns = [

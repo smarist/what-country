@@ -10,7 +10,7 @@ const useStyles = makeStyles((theme) => ({
     },
     '& label': {
       color: theme.palette.placeHolderColor.main,
-      fontSize: '14px',
+      fontSize: '18px',
       marginTop: 0,
       width: '80%',
       display: 'block',
@@ -20,22 +20,28 @@ const useStyles = makeStyles((theme) => ({
     },
     '& label.MuiInputLabel-shrink': {
       color: theme.palette.placeHolderColor.main,
-      fontSize: '15px',
-      marginTop: -7,
+      fontSize: '18px',
+      marginTop: -8,
+    },
+    '& .MuiButtonBase-root': {
+      color: theme.palette.textColor.main,
     },
   },
+  rippleButton: {
+    color: theme.palette.textColor.main,
+  },
   input: {
-    borderRadius: '0',
+    borderRadius: '3px',
     height: '35px',
     width: '100%',
     color: theme.palette.textColor.main,
     backgroundColor: theme.palette.dropDownBgColor.main,
     boxShadow: 'none',
     fontSize: '14px',
-    paddingLeft: 10,
-    paddingRight: 35,
-    boxSizing: 'border-box',
+    paddingLeft: 2,
+    paddingTop: 5,
     border: 'none',
+    overflow: 'hidden',
     '& > div:first-child': {
       zIndex: 5,
       width: '100%',
@@ -45,6 +51,31 @@ const useStyles = makeStyles((theme) => ({
     '&.Mui-focused > div:first-child': {
       backgroundColor: 'transparent',
     },
+    '&.avatar-wrapper': {
+      color: '#011B60',
+    },
+    '&.avatar-wrapper img': {
+      backgroundColor: theme.palette.textColor.main,
+      color: theme.palette.textColor.main,
+      width: '100%',
+      height: '100%',
+      paddingTop: 12,
+      paddingBottom: 12,
+      justifyContent: 'flex-start',
+    },
+    '& path': {
+      stroke: theme.palette.textColor.main,
+    },
+  },
+  label: {
+    marginTop: -7,
+    fontSize: 16,
+  },
+  dropDownValue: {
+    fontSize: '13px',
+    fontWeight: 400,
+    padding: '12px 15px',
+    color: '#011B60',
   },
 }));
 

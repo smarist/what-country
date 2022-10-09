@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing Country Detail Page Should render successfully 1`] = `
+<div
+  class="MuiBox-root MuiBox-root-15"
+  data-testid="country-detail"
+>
+  <div
+    class="MuiBox-root MuiBox-root-16 makeStyles-headerBox-2"
+  >
+    <div
+      class="MuiBox-root MuiBox-root-21 makeStyles-headerBox-17"
+    >
+      <p
+        class="MuiTypography-root makeStyles-headerH1-18 MuiTypography-body1"
+      >
+        Where in the world?
+      </p>
+      <div
+        class="MuiBox-root MuiBox-root-22 makeStyles-switchBox-19"
+      >
+        <div
+          class="MuiBox-root MuiBox-root-23"
+        >
+          <svg>
+            light mode-icon.svg
+          </svg>
+        </div>
+        <div
+          class="MuiBox-root MuiBox-root-24"
+        >
+          LightMode
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="MuiBox-root MuiBox-root-25 makeStyles-mainBox-3"
+  >
+    <div
+      class="MuiBox-root MuiBox-root-26 makeStyles-backBox-11"
+    >
+      <div
+        class="MuiBox-root MuiBox-root-27 makeStyles-arrow-12"
+      >
+        ←
+      </div>
+      <div
+        class="MuiBox-root MuiBox-root-28 makeStyles-back-13"
+      >
+        Back
+      </div>
+    </div>
+  </div>
+</div>
+`;

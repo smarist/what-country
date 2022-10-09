@@ -19,9 +19,9 @@ const useStyles = makeStyles((theme) => ({
     zIndex: 2,
   },
   mainBox: {
-    padding: '90px 47px !important',
+    padding: '100px 47px !important',
     height: '100%',
-    marginTop: '10px',
+    marginTop: '20px',
     overflowY: 'scroll',
     '&::-webkit-scrollbar': {
       display: 'none',
@@ -34,10 +34,27 @@ const useStyles = makeStyles((theme) => ({
     gridAutoRows: '320px !important',
     marginTop: '60px !important',
   },
+  search: {
+    backgroundColor: `${theme.palette.bgColor2.main} !important`,
+    color: theme.palette.textColor.main,
+    borderRadius: '2px',
+  },
+  searchGrid: {
+    // display: 'flex',
+  },
+  dropdownGrid: {
+    marginTop: '5px !important',
+    color: theme.palette.textColor.main,
+  },
+  dropdownBox: {
+    height: '51px !important',
+    color: theme.palette.textColor.main,
+    borderRadius: '2px',
+  },
   dropDown: {
     backgroundColor: `${theme.palette.bgColor2.main} !important`,
     color: theme.palette.textColor.main,
-    height: '40px !important',
+    height: '51px !important',
     fontSize: '13px !important',
     borderRadius: '2px !important',
     '& fieldset': {
@@ -45,6 +62,10 @@ const useStyles = makeStyles((theme) => ({
     },
     '& label': {
       display: 'none',
+    },
+    '& .MuiList-padding ': {
+      display: 'flex !important',
+      flexDirection: 'column !important',
     },
   },
 }));

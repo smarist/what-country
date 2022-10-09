@@ -14,6 +14,7 @@ export default function Header() {
   return (
     <Box
       className={classes.headerBox}
+      data-testid="header"
     >
       <Typography className={classes.headerH1}>Where in the world?</Typography>
       <Box className={classes.switchBox} onClick={() => onToggleTheme()}>

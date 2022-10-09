@@ -9,7 +9,7 @@ import CountryDetail from '../pages/CountryDetail';
 function PageRoutes() {
   return (
     <Routes>
-      <Route path="/" exact element={<Home />} />
+      <Route path="" exact element={<Home />} />
       <Route exact path="/:nameId" element={<CountryDetail />} />
     </Routes>
   );

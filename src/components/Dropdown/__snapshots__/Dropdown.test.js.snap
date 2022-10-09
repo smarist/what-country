@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Dropdown Test should render successfully 1`] = `
+<div
+  class="MuiFormControl-root makeStyles-formControl-2 MuiFormControl-fullWidth"
+  data-testid="dropdown"
+>
+  <div
+    class="MuiInputBase-root MuiOutlinedInput-root  makeStyles-input-4 MuiInputBase-formControl"
+  >
+    <div
+      aria-haspopup="listbox"
+      aria-labelledby="demo-customized-select-label demo-customized-select"
+      class="MuiSelect-root MuiSelect-select MuiSelect-selectMenu MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input"
+      id="demo-customized-select"
+      role="button"
+      tabindex="0"
+    >
+      <span>
+        ​
+      </span>
+    </div>
+    <input
+      aria-hidden="true"
+      class="MuiSelect-nativeInput"
+      tabindex="-1"
+      value=""
+    />
+    <svg
+      aria-hidden="true"
+      class="MuiSvgIcon-root MuiSelect-icon MuiSelect-iconOutlined"
+      focusable="false"
+      viewBox="0 0 24 24"
+    >
+      <path
+        d="M7 10l5 5 5-5z"
+      />
+    </svg>
+    <fieldset
+      aria-hidden="true"
+      class="PrivateNotchedOutline-root-7 MuiOutlinedInput-notchedOutline"
+      style="padding-left: 8px;"
+    >
+      <legend
+        class="PrivateNotchedOutline-legend-8"
+        style="width: 0.01px;"
+      >
+        <span>
+          ​
+        </span>
+      </legend>
+    </fieldset>
+  </div>
+</div>
+`;

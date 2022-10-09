@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing Country Card Component Should render successfully 1`] = `
+<div
+  class="MuiBox-root MuiBox-root-9 makeStyles-cardBox-1"
+  data-testid="country-card"
+>
+  <div
+    class="MuiBox-root MuiBox-root-10 makeStyles-flagImage-2"
+  >
+    <link-navigation
+      to="/"
+    >
+      <img
+        alt="flag"
+        class="makeStyles-flag-3"
+        src=""
+      />
+    </link-navigation>
+  </div>
+  <div
+    class="MuiBox-root MuiBox-root-11 makeStyles-cardDetails-4"
+  >
+    <p
+      class="MuiTypography-root makeStyles-countryName-6 MuiTypography-body1"
+    />
+    <div
+      class="MuiBox-root MuiBox-root-12 makeStyles-textBox-5"
+    >
+      <p
+        class="MuiTypography-root makeStyles-cardTitle-7 MuiTypography-body1"
+      >
+        Population:
+      </p>
+      <p
+        class="MuiTypography-root makeStyles-cardText-8 MuiTypography-body1"
+      />
+    </div>
+    <div
+      class="MuiBox-root MuiBox-root-13 makeStyles-textBox-5"
+    >
+      <p
+        class="MuiTypography-root makeStyles-cardTitle-7 MuiTypography-body1"
+      >
+        Region:
+      </p>
+      <p
+        class="MuiTypography-root makeStyles-cardText-8 MuiTypography-body1"
+      />
+    </div>
+    <div
+      class="MuiBox-root MuiBox-root-14 makeStyles-textBox-5"
+    >
+      <p
+        class="MuiTypography-root makeStyles-cardTitle-7 MuiTypography-body1"
+      >
+        Capital:
+      </p>
+      <p
+        class="MuiTypography-root makeStyles-cardText-8 MuiTypography-body1"
+      />
+    </div>
+  </div>
+</div>
+`;

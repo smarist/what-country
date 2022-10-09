@@ -12,6 +12,8 @@ function Dropdown({
   options,
   variant,
   styles,
+  defaultValue,
+  className,
 }) {
   const classes = useStyles();
   return (
@@ -20,22 +22,32 @@ function Dropdown({
       variant={variant || 'outlined'}
       className={classes.formControl}
       style={styles}
+      data-testid="dropdown"
     >
-      {label && <InputLabel id="demo-customized-select-label">{label}</InputLabel> }
+      {label && (
+      <InputLabel
+        id="demo-customized-select-label"
+        className={classes.label}
+      >
+        {label}
+      </InputLabel>
+      ) }
       <Select
         labelId="demo-customized-select-label"
         id="demo-customized-select"
         value={value}
+        defaultValue={defaultValue}
+        className={[className, classes.input].join(' ')}
         onChange={e => {
           onSelect(e.target.value);
         }}
         // input={<BootstrapInput />}
       >
-        {options.map((option, index) => (
+        {options?.map((option, index) => (
           <MenuItem
             selected={index === 0 ? true : undefined}
-            className={classes.optionsMenuItem}
-            value={option.value}
+            className={classes.dropDownValue}
+            value={option?.value}
             key={`menu-item${index}`}
           >
             <ButtonBase
@@ -46,7 +58,7 @@ function Dropdown({
               }}
               onClick={() => option.onClick?.(option)}
             >
-              {option.name}
+              {option?.name}
             </ButtonBase>
           </MenuItem>
         ))}

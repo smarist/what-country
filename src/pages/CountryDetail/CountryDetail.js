@@ -1,7 +1,6 @@
 import { Box, Grid, Typography } from '@material-ui/core';
 import React, { useEffect } from 'react';
 import { useParams } from 'react-router';
-import { Link } from 'react-router-dom';
 import Header from '../../components/Header/Header';
 import useStyles from './CountryDetail.style';
 import countryServices from '../../Services/country.services';
@@ -9,6 +8,7 @@ import countryServices from '../../Services/country.services';
 function CountryDetail({ country, setCountryNameList }) {
   const classes = useStyles();
   const { nameId } = useParams();
+  // const history = useNavigate();
   useEffect(() => {
     countryServices.getCountryNameList(nameId)
       .then((res) => {
@@ -17,17 +17,15 @@ function CountryDetail({ country, setCountryNameList }) {
       .catch(() => {});
   }, []);
   return (
-    <Box className={classes.CountryDetailBox}>
+    <Box className={classes.CountryDetailBox} data-testid="country-detail">
       <Box className={classes.headerBox}>
         <Header />
       </Box>
       <Box className={classes.mainBox}>
-        <Link to="/Home" className={classes.link}>
-          <Box className={classes.backBox}>
-            <Box className={classes.arrow}>&larr;</Box>
-            <Box className={classes.back}>Back</Box>
-          </Box>
-        </Link>
+        <Box className={classes.backBox} onClick={() => null}>
+          <Box className={classes.arrow}>&larr;</Box>
+          <Box className={classes.back}>Back</Box>
+        </Box>
         {country?.map(({
           name, capital, subregion, region, population,
           flags, languages, borders, currencies, tld,

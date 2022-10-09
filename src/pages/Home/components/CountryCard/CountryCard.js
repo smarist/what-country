@@ -12,7 +12,7 @@ function CountryCard({
 }) {
   const classes = useStyles();
   return (
-    <Box className={classes.cardBox}>
+    <Box className={classes.cardBox} data-testid="country-card">
       <Box className={classes.flagImage}>
         <Link to={`/${name}`} key={name}>
           <img src={flag} alt="flag" className={classes.flag} />
