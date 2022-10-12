@@ -48,12 +48,11 @@ const useStyles = makeStyles((theme) => ({
   },
   dropdownBox: {
     height: '51px !important',
-    color: theme.palette.textColor.main,
     borderRadius: '2px',
   },
   dropDown: {
     backgroundColor: `${theme.palette.bgColor2.main} !important`,
-    color: theme.palette.textColor.main,
+    color: '#000000 !important',
     height: '51px !important',
     fontSize: '13px !important',
     borderRadius: '2px !important',
@@ -63,7 +62,7 @@ const useStyles = makeStyles((theme) => ({
     '& label': {
       display: 'none',
     },
-    '& .MuiList-padding ': {
+    '& .MuiList-root': {
       display: 'flex !important',
       flexDirection: 'column !important',
     },

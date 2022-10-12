@@ -34,15 +34,16 @@ const useStyles = makeStyles((theme) => ({
     height: '270px',
     // width: '100%',
     borderRadius: '3px 3px 0 0',
-    border: '2px solid red',
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
+    boxSizing: 'border-box',
   },
   flag: {
-    // width: '100%',
+    width: '100%',
+    maxWidth: '500px',
     height: '100%',
-    objectFit: 'contain',
+    objectFit: 'cover',
   },
   typoBox: {
     display: 'flex',
@@ -73,6 +74,7 @@ const useStyles = makeStyles((theme) => ({
     gap: '5px',
     background: theme.palette.bgColor2.main,
     color: theme.palette.textColor.main,
+    cursor: 'pointer',
   },
   arrow: {
     fontSize: '30px !important',

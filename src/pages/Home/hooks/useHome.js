@@ -1,4 +1,4 @@
-import { useReducer, useEffect } from 'react';
+import { useReducer, useEffect, useCallback } from 'react';
 import { useDispatch } from 'react-redux';
 import { setCountryList } from '../../../redux/actions/countryAction';
 import { setIsLoading } from '../../../redux/actions/appAction';
@@ -15,29 +15,46 @@ function useHome() {
   const [state, dispatch] = useReducer((stat, value) => ({ ...stat, ...value }), initState);
 
   const {
-    searchValue,
     selectedValue,
   } = state;
+
+  useEffect(() => {
+    console.log('test1');
+    setIsLoading(true)(dispatcher);
+    countryServices.getCountryList()
+      .then((res) => {
+        setCountryList(res.slice(0, 50))(dispatcher);
+        setIsLoading(false)(dispatcher);
+        console.log('test3');
+      })
+      .catch(() => {});
+  }, []); // eslint-disable-line
+
+  const handleSearch = useCallback(({
+    search,
+  }) => {
+    countryServices.getSearchCountryNameList(search)
+      .then((res) => {
+        setCountryList(res)(dispatcher);
+        setIsLoading(false)(dispatcher);
+      })
+      .catch(() => {});
+  }, []);
 
   const onSearch = event => {
     const searchText = event.target.value;
     dispatch({ searchValue: searchText });
-    console.log('onSearchiing');
     debounceHandler(() => {
       setIsLoading(true)(dispatcher);
-      countryServices.getSearchCountryNameList(searchValue)
-        .then((res) => {
-          setCountryList(res);
-          setIsLoading(false)(dispatcher);
-          console.log('onSearchiin5');
-        })
-        .catch(() => {});
+      handleSearch({
+        search: searchText,
+      });
     }, 500);
   };
-  console.log(searchValue);
 
   useEffect(() => {
     setIsLoading(true)(dispatcher);
+    if (!selectedValue) { return; }
     if (selectedValue === 'all') {
       countryServices.getCountryList(selectedValue)
         .then((res) => {

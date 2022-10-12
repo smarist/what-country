@@ -1,6 +1,6 @@
 import { Box, Grid, Typography } from '@material-ui/core';
 import React, { useEffect } from 'react';
-import { useParams } from 'react-router';
+import { useParams, useNavigate } from 'react-router';
 import Header from '../../components/Header/Header';
 import useStyles from './CountryDetail.style';
 import countryServices from '../../Services/country.services';
@@ -8,7 +8,7 @@ import countryServices from '../../Services/country.services';
 function CountryDetail({ country, setCountryNameList }) {
   const classes = useStyles();
   const { nameId } = useParams();
-  // const history = useNavigate();
+  const navigate = useNavigate();
   useEffect(() => {
     countryServices.getCountryNameList(nameId)
       .then((res) => {
@@ -22,7 +22,7 @@ function CountryDetail({ country, setCountryNameList }) {
         <Header />
       </Box>
       <Box className={classes.mainBox}>
-        <Box className={classes.backBox} onClick={() => null}>
+        <Box className={classes.backBox} onClick={() => navigate('/')}>
           <Box className={classes.arrow}>&larr;</Box>
           <Box className={classes.back}>Back</Box>
         </Box>

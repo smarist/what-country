@@ -1,6 +1,6 @@
 import { Box, Grid } from '@material-ui/core';
 import React from 'react';
-import { nanoid } from 'nanoid';
+// import { nanoid } from 'nanoid';
 import Header from '../../components/Header/Header';
 import SearchField from '../../components/SearchField';
 import CardSkeleton from './components/CardSkeleton';
@@ -24,7 +24,6 @@ function Home({
     searchValue,
     selectedValue,
   } = state;
-  console.log(searchValue);
   return (
     <Box className={classes.homeBox} data-testid="home">
       <Box className={classes.headerBox}>
@@ -62,15 +61,15 @@ function Home({
         )
           : (
             <Grid className={classes.homeGrid}>
-              {countries?.map(({
-                population, region, capital, flags, name,
+              {(countries || []).slice(0, 50).map(({
+                population, region, capital, flags, name, index,
               }) => (
                 <CountryCard
-                  key={nanoid()}
+                  key={index}
                   population={population}
                   region={region}
                   capital={capital}
-                  flag={flags.svg}
+                  flag={flags.png}
                   name={name?.common}
                 />
               ))}

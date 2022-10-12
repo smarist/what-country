@@ -12,7 +12,7 @@ jest.mock('./hooks/useHome', () =>
   }));
 
 const props = {
-  isLaoding: jest.fn(),
+  isLoading: true,
   countries: [],
 };
 

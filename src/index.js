@@ -7,6 +7,23 @@ import { store } from './redux/index';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+// eslint-disable-next-line
+String.prototype.toSentenceCase = function () {
+  const value = String(this);
+  return value
+    .toLowerCase()
+    .replace(/^./g, this[0].toUpperCase());
+};
+
+// eslint-disable-next-line
+String.prototype.toTitleCase = function () {
+  const value = String(this);
+  return value
+    .toLowerCase()
+    .split(' ')
+    .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(' ');
+};
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>

@@ -9,9 +9,13 @@ jest.mock('./hooks/useHeader', () =>
     modeIcon: '',
   }));
 
+const props = {
+  onToggleTheme: jest.fn(),
+};
+
 describe('Testing Header Component', () => {
   it('Should render successfully', () => {
-    const { queryByTestId } = render(withThemeAndStore(Header));
+    const { queryByTestId } = render(withThemeAndStore(Header, props));
 
     const header = queryByTestId('header');
     expect(header).toBeTruthy();

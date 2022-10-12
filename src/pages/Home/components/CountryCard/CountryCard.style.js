@@ -12,11 +12,29 @@ const useStyles = makeStyles((theme) => ({
     height: '150px',
     width: '100%',
     borderRadius: '3px 3px 0 0',
+    borderBottom: `0.5px solid ${theme.palette.textColor2.main}`,
   },
   flag: {
     width: '100%',
     height: '100%',
-    objectFit: 'cover',
+    // objectFit: 'cover',
+    // maxHeight: '500px',
+    cursor: 'pointer',
+    '&:hover': {
+      transform: 'scale(1.006)',
+    },
+
+    '&::before': {
+      content: '""',
+      display: 'block',
+      width: '100%',
+      height: '100%',
+      borderRadius: 20,
+      position: 'absolute',
+      right: -5,
+      bottom: -5,
+      zIndex: 0,
+    },
   },
   cardDetails: {
     padding: '20px',
