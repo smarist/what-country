@@ -12,16 +12,23 @@ const useStyles = makeStyles((theme) => ({
     color: theme.palette.textColor.main,
   },
   headerH1: {
-    fontSize: '1.2em',
+    fontSize: '1.3em !important',
     fontWeight: '600',
   },
   switchBox: {
     display: 'flex',
     gap: '10px',
+    marginTop: '3px',
   },
   moonIcon: {
-    height: '25px',
-    width: '25px',
+    marginTop: '2px',
+    height: '18px',
+    width: '18px',
+  },
+  sunIcon: {
+    marginTop: '2px',
+    height: '20px',
+    width: '20px',
   },
 }));
 

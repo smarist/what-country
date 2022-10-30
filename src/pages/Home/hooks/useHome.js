@@ -19,13 +19,11 @@ function useHome() {
   } = state;
 
   useEffect(() => {
-    console.log('test1');
     setIsLoading(true)(dispatcher);
     countryServices.getCountryList()
       .then((res) => {
         setCountryList(res.slice(0, 50))(dispatcher);
         setIsLoading(false)(dispatcher);
-        console.log('test3');
       })
       .catch(() => {});
   }, []); // eslint-disable-line

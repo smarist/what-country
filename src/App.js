@@ -1,6 +1,7 @@
 import { MuiThemeProvider } from '@material-ui/core';
 import { BrowserRouter } from 'react-router-dom';
 import { useSelector } from 'react-redux';
+import './index.css';
 import { darkTheme, theme } from './utils/theme';
 import Routes from './Routes/PageRoutes';
 
