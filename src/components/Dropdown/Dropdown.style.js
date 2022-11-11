@@ -28,14 +28,13 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   rippleButton: {
-    color: theme.palette.textColor.main,
+    color: '#000',
   },
   input: {
     borderRadius: '3px',
     height: '35px',
     width: '100%',
-    color: theme.palette.textColor.main,
-    backgroundColor: theme.palette.dropDownBgColor.main,
+    color: '#000',
     boxShadow: 'none',
     fontSize: '14px',
     paddingLeft: 2,

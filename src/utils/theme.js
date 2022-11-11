@@ -11,6 +11,7 @@ export const theme = createTheme({
     placeHolderColor: { main: '#95A4B3' },
     dropDownBgColor: { main: '#fff' },
     borderColor1: { main: '#303C479e' },
+    primary: { main: '#105FFB' },
     boxShadow: { main: '0 3px 10px rgb(0 0 0 / 0.2)' },
   },
 });
@@ -26,6 +27,7 @@ export const darkTheme = createTheme({
     placeHolderColor: { main: '#95A4B3' },
     dropDownBgColor: { main: '#292929' },
     borderColor2: { main: '#E8F1FF60' },
+    primary: { main: '#105FFB' },
     boxShadow: { main: '0 3px 10px rgb(0 0 0 / 0.2)' },
   },
 });

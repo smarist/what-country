@@ -9,6 +9,7 @@ import useStyles from './Home.style';
 import Dropdown from '../../components/Dropdown/Dropdown';
 import { regionOptions } from './constant';
 import useHome from './hooks/useHome';
+// import SearchBar from '../../components/SearchBar/SearchBar';
 
 function Home({
   isLoading,

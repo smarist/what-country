@@ -34,17 +34,8 @@ const useStyles = makeStyles((theme) => ({
     gridAutoRows: '320px !important',
     marginTop: '60px !important',
   },
-  search: {
-    backgroundColor: `${theme.palette.bgColor2.main} !important`,
-    color: theme.palette.textColor.main,
-    borderRadius: '2px',
-  },
-  searchGrid: {
-    // display: 'flex',
-  },
   dropdownGrid: {
     marginTop: '5px !important',
-    color: theme.palette.textColor.main,
   },
   dropdownBox: {
     height: '51px !important',
@@ -58,6 +49,7 @@ const useStyles = makeStyles((theme) => ({
     borderRadius: '2px !important',
     '& fieldset': {
       border: `1px solid ${theme.palette.borderColor.main} !important`,
+      color: '#000000 !important',
     },
     '& label': {
       display: 'none',
