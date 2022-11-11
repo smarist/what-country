@@ -34,7 +34,7 @@ const useStyles = makeStyles((theme) => ({
     borderRadius: '3px',
     height: '35px',
     width: '100%',
-    color: '#000',
+    color: theme.palette.textColor.main,
     boxShadow: 'none',
     fontSize: '14px',
     paddingLeft: 2,
@@ -51,7 +51,7 @@ const useStyles = makeStyles((theme) => ({
       backgroundColor: 'transparent',
     },
     '&.avatar-wrapper': {
-      color: '#011B60',
+      color: theme.palette.textColor.main,
     },
     '&.avatar-wrapper img': {
       backgroundColor: theme.palette.textColor.main,

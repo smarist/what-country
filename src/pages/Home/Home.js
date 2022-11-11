@@ -35,11 +35,9 @@ function Home({
           <Grid item sm={5} md={5} xs={12}>
             <SearchField
               value={searchValue}
-              noBorder
               iconComponent
               placeholder="Search for a country"
               onChange={onSearch}
-              className={classes.search}
             />
           </Grid>
           <Grid item sm={2} md={3} xs={0} />

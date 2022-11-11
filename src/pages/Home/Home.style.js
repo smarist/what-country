@@ -48,7 +48,7 @@ const useStyles = makeStyles((theme) => ({
     fontSize: '13px !important',
     borderRadius: '2px !important',
     '& fieldset': {
-      border: `1px solid ${theme.palette.borderColor.main} !important`,
+      // border: `1px solid ${theme.palette.borderColor.main} !important`,
       color: '#000000 !important',
     },
     '& label': {
