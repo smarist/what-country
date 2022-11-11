@@ -21,7 +21,7 @@ const useStyles = makeStyles((theme) => ({
     '& label.MuiInputLabel-shrink': {
       color: theme.palette.placeHolderColor.main,
       fontSize: '18px',
-      marginTop: -8,
+      marginTop: -15,
     },
     '& .MuiButtonBase-root': {
       color: theme.palette.textColor.main,
