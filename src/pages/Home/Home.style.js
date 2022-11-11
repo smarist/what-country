@@ -45,10 +45,11 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: `${theme.palette.bgColor2.main} !important`,
     color: '#000000 !important',
     height: '51px !important',
-    fontSize: '13px !important',
+    // fontSize: '16px !important',
     borderRadius: '2px !important',
+    fontSize: '0.85em',
+    fontWeight: '200',
     '& fieldset': {
-      // border: `1px solid ${theme.palette.borderColor.main} !important`,
       color: '#000000 !important',
     },
     '& label': {
